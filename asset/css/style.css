@@ -1,11 +1,89 @@
 body {
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  margin-top: 50vh;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.containerAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart {
+  background-color: white;
+  width: 25%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.cart img {
+  -o-object-position: center;
+     object-position: center;
+  width: 323px;
+  height: 242px;
+}
+
+.cart .backgroundContent {
+  position: relative;
+  background: white;
+  -webkit-transform: translateY(-36px);
+          transform: translateY(-36px);
+}
+
+.cart .backgroundContent .box {
+  top: -27px;
+  z-index: 1;
+  position: absolute;
+  background: red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart .backgroundContent .content {
+  background: white;
+  margin: 20px;
+  -webkit-transform: translateY(42px);
+          transform: translateY(42px);
+}
+
+.cart .backgroundContent .content .doggy {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.cart .backgroundContent .content .doggyDescr {
+  color: red;
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+.cart .containerElem {
+  z-index: 1;
+  background: white;
+  padding: 20px;
+  -webkit-transform: translateY(-118px);
+          transform: translateY(-118px);
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cart .containerElem .elements {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .animationFade {
@@ -19,7 +97,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -44,7 +121,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -71,7 +147,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }

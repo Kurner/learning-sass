@@ -12,7 +12,6 @@
     border: 3px solid white;
     width: fit-content;
     padding: 10px;
-    margin: auto;
     font:
     {
         family: Arial, Helvetica, sans-serif;
@@ -26,13 +25,98 @@
 body
 {
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container
+.containerAll
 {
-    margin-top: 50vh;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+// CARTE
+
+.cart
+{
+    background-color: white;
+    width: 25%;
+    height: 450px;
+    overflow: hidden;
+   
+    img
+    {
+        object-position: center;
+        width: 323px;
+        height: 242px;
+    }
+   
+    .backgroundContent
+    {
+        position:relative;
+        background:white;
+        transform: translateY(-36px);
+
+        .box
+        {
+            top:-27px;
+            z-index: 1;
+            position:absolute;
+            background:red;
+            width: fit-content;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .content 
+    {       
+        background:white;
+        margin: 20px;
+        transform: translateY(42px);
+       
+        .doggy
+        {
+            margin: 0 auto;
+            font:
+            {
+                weight: bold;
+                size: xx-large;
+            }
+        }
+       
+        .doggyDescr
+        {
+            color:red;
+            font-size: x-large;
+            margin-top: 10px;
+        }
+    }
+    }
+    
+    
+    .containerElem
+    {
+        z-index: 1;
+        background: white;
+        padding: 20px;
+        transform: translateY(-118px);
+        object-position: center;
+       
+        .elements
+        {            
+            background: white;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    
+}
+
+
+
+
+// ANIMATIONS
 
 .animationFade
 {
