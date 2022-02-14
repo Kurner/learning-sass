@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+}
+
+.container {
+  margin-top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.animationFade {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: white;
+  border: 3px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.animationFade:hover {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: black;
+  background-color: white;
+}
+
+.animationSize {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: white;
+  border: 3px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.animationSize:hover {
+  color: black;
+  background-color: white;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.animationDodge {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: white;
+  border: 3px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.animationDodge:hover {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: black;
+  background-color: white;
+  -webkit-transform: translateX(7em);
+          transform: translateX(7em);
+}
+/*# sourceMappingURL=style.css.map */

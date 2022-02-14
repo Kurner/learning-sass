@@ -1,0 +1,75 @@
+// MIXIN
+
+@mixin transition($duration,$timing) {
+
+    transition-duration: $duration;
+    transition-timing-function: $timing;    
+}
+
+@mixin boxBase {
+
+    color: white;
+    border: 3px solid white;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    font:
+    {
+        family: Arial, Helvetica, sans-serif;
+        weight:bold;
+    }
+   
+}
+
+// SCSS
+
+body
+{
+    background-color: black;
+}
+
+.container
+{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.animationFade
+{
+    @include transition(0.7s, ease);
+    @include boxBase;
+    &:hover
+    {
+        @include transition(0.7s, ease);
+        color:black;
+        background-color: white;
+    }       
+}
+
+.animationSize
+{
+    @include transition(0.7s, ease);
+    @include boxBase;
+    &:hover
+    {
+        
+        color:black;
+        background-color: white;
+        transform: scale(1.5);
+        @include transition(0.7s, ease);
+
+    }     
+}
+
+.animationDodge
+{
+    @include transition(0.7s, ease);
+    @include boxBase;
+    &:hover
+    {
+        @include transition(0.7s, ease);
+        color:black;
+        background-color: white;
+        transform: translateX(7em);
+    }     
+}
