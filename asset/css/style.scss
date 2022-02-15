@@ -3,7 +3,7 @@
 @mixin transition($duration,$timing) {
 
     transition-duration: $duration;
-    transition-timing-function: $timing;    
+    transition-timing-function: $timing; 
 }
 
 @mixin boxBase {
@@ -39,23 +39,68 @@ body
 
 .cart
 {
+    @include transition(0.7s,ease);
+    position: relative;
     background-color: white;
     width: 25%;
     height: 450px;
     overflow: hidden;
+    margin-top: 15vh;
+    
+    &:hover
+    {
+        box-shadow: 0 0 2vh white;
+        //filter: drop-shadow(1.5vh 0.5vh 5px white);
+        img
+        {   
+            @include transition(0.7s,ease);
+            transform: scale(1.5);
+            opacity: 75%;
+        }
+
+        .backgroundContent
+        {
+            @include transition(0.7s,ease);
+            transform: translateY(-122px);
+        }
+        
+    }
    
+    .day
+    {
+        position: absolute;
+        z-index: 1;
+        border: 0;
+        background-color: red;
+        border-radius: 60%;
+        padding: 2vh;
+        width: 10%;
+        right: 2vh;
+        top:2vh;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+    }
+
     img
     {
+        @include transition(0.7s,ease);
         object-position: center;
         width: 323px;
-        height: 242px;
+        height: 242px;        
     }
    
     .backgroundContent
     {
+        @include transition(0.7s,ease);
         position:relative;
         background:white;
-        transform: translateY(-36px);
+        transform: translateY(-5px);
+        &:hover
+        {
+            @include transition(0.7s,ease);
+            transform: translateY(-122px);
+        }
 
         .box
         {
@@ -73,7 +118,7 @@ body
     {       
         background:white;
         margin: 20px;
-        transform: translateY(42px);
+        transform: translateY(36px);
        
         .doggy
         {
@@ -90,17 +135,21 @@ body
             color:red;
             font-size: x-large;
             margin-top: 10px;
+            margin-bottom: 0;
+        }
+        p
+        {
+            margin-top: 0;
         }
     }
-    }
-    
+    }    
     
     .containerElem
     {
         z-index: 1;
         background: white;
-        padding: 20px;
-        transform: translateY(-150px);
+        padding: 29px;
+        transform: translateY(-100px);
         object-position: center;
        
         .elements
@@ -112,7 +161,6 @@ body
     }
     
 }
-
 
 
 
